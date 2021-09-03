@@ -136,6 +136,10 @@ $y-medium: 1.0rem;
         margin: $y-medium 0;
         padding: 8px 8px;
     }
+    pre code {
+		all: unset;
+		font-family: $font-family;
+    }
     code {
         color: $black;
         background-color: #f8f8f8;
@@ -143,8 +147,6 @@ $y-medium: 1.0rem;
         border-radius: 10%;
         padding: 0px 4px;
 		font-family: $font-family;
-    }
-    pre code {all: unset;
     }
     .highlight {
         margin: $y-medium auto;
