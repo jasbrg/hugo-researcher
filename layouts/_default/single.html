@@ -1,7 +1,9 @@
 {{ define "main" }}
 <div class="container">
   <h1>{{ .Title }}</h1>
-
+  <small>Published: {{ .Date | time.Format ":date_full" }}</small><br>
+  <small>Edited: {{ .Lastmod | time.Format ":date_full" }}</small>
+  <hr>
   {{ .Content }}
 </div>
 {{ end }}
