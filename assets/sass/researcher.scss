@@ -146,12 +146,13 @@ body {
     }
     code {
         color: $black;
-		border: 1px solid #cccccc;
+		border: 1px solid #ccc;
         border-radius: 10%;
         padding: 0px 4px;
 		font-family: $font-family;
     }
     .highlight {
+		outline: 2px solid #222;
         margin: $y-medium auto;
         & > pre {
             padding: 8px 8px;
