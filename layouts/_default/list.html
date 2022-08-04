@@ -3,7 +3,7 @@
     <h1>{{ .Title }}</h1>
     <ul>
         {{ range .Pages }}
-            {{ if not (in .Params.tags "hidden") }}
+            {{ if not .Params.hidden }}
                <li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
             {{ end }}
         {{ end }}
