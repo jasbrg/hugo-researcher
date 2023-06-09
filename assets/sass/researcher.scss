@@ -44,6 +44,9 @@ $y-medium: 1.0rem;
 }
 
 // Style
+body {
+	background-color: #eed;
+}
 * {
     color: $black;
     font-family: $font-family;
@@ -138,17 +141,20 @@ $y-medium: 1.0rem;
         margin: $y-medium 0;
         padding: 8px 8px;
     }
+    pre code {
+		all: unset;
+		font-family: $font-family;
+		line-height: 1.2;
+    }
     code {
         color: $black;
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
+		border: 1px solid #ccc;
         border-radius: 10%;
         padding: 0px 4px;
-    }
-    pre code {
-        all: unset;
+		font-family: $font-family;
     }
     .highlight {
+		outline: 2px solid #222;
         margin: $y-medium auto;
         & > pre {
             padding: 8px 8px;
