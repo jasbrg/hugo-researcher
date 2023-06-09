@@ -1,5 +1,16 @@
 <div id="footer" class="mb-5">
     <hr>
+    {{ if .Date }}
+    <div class="container text-center">
+      <small>Published: {{ .Date | time.Format ":date_full" }}</small><br>
+    </div>
+    {{ end }}
+    {{ if ne .Date .Lastmod }}
+    <div class="container text-center">
+      <small>Edited: {{ .Lastmod | time.Format ":date_full" }}</small>
+    </div>
+    {{ end }}
+
     {{ if .Site.Params.socialIcons }}
     <div class="container text-center">
         {{ range $item := .Site.Params.socialIcons }}

@@ -1,12 +1,6 @@
 {{ define "main" }}
 <div class="container">
   <h1>{{ .Title }}</h1>
-  {{ if .Date }}
-  <small>Published: {{ .Date | time.Format ":date_full" }}</small><br>
-  {{ end }}
-  {{ if .Lastmod }}
-  <small>Edited: {{ .Lastmod | time.Format ":date_full" }}</small>
-  {{ end }}
   <hr>
   {{ .Content }}
 </div>
